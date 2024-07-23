@@ -1,0 +1,7 @@
+@use "@/app/scss/variables" as *;
+
+#border{
+    border: rem(0.5) solid $dark;
+    padding: rem(10) rem(20);
+    border-radius: rem(1000);
+}

@@ -1,0 +1,198 @@
+@use "@/app/scss/variables" as *;
+
+#homehero{
+    @include full-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    gap: rem(40);
+    overflow-y: hidden;
+
+    @include breakpoint(tablet){
+        padding-block: rem(50);
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+    }
+
+    @include breakpoint(laptop){
+        height: 100vh;
+        gap: rem(140);
+        justify-content: center;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(tablet){
+            width: 60%;
+        }
+
+        @include breakpoint(laptop){
+            width: 50%;
+        }
+
+        #border{
+            width: fit-content;
+            text-transform: uppercase;
+            padding: rem(12) rem(24);
+                font-weight: 600;
+                animation: fadeIn 4s ease-in-out;
+
+                @keyframes fadeIn {
+                    0% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
+
+            @include breakpoint(laptop){
+                align-self: flex-end;
+                padding: rem(12) rem(24);
+                font-weight: 600;
+                margin-right: 5%;
+            }
+        }
+
+        h1{
+            padding-block: rem(10) rem(20);
+            text-transform: uppercase;
+            font-size: rem(50);
+
+            @include breakpoint(tablet){
+                font-size: rem(60);
+            }
+
+            @include breakpoint(laptop){
+                font-size: rem(110);
+                font-weight: 500;
+            }
+        }
+
+        .desc{
+            display: grid;
+            gap: rem(20);
+            font-size: rem(14);
+            animation: fadeUp 5s ease-in-out;
+
+            @keyframes fadeUp {
+                0% {opacity: 0;
+                margin-top: rem(50);}
+                100%{
+                    opacity: 1;
+                    margin-top: 0;
+                }
+            }
+
+            @include breakpoint(tablet){
+                width: 90%;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @include breakpoint(laptop){
+                gap: rem(20);
+                width: 100%;
+                font-size: rem(16);
+            }
+        }
+    }
+
+    .right{
+
+        @include breakpoint(tablet){
+            width: 40%;
+
+        }
+
+        @include breakpoint(laptop){
+            width: 40%;
+        }
+        .img-cont{
+                width: 100%;
+                aspect-ratio: 3 / 2;
+                position: relative;
+                border-radius: rem(20);
+                overflow: hidden;
+                z-index: -99;
+                animation: fadeleft 1.5s ease-in-out;
+
+                @keyframes fadeleft {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(20%);
+                    }
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+
+                @include breakpoint(tablet){
+                    aspect-ratio: 4/ 5;
+                }
+                img{
+                    object-fit: cover;
+                    object-position: 50% 30%;
+                }
+        }
+    }
+}
+
+// #homehero{
+//     @include full-width;
+//     height: calc(100vh - rem(50));
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: rem(120);
+//     align-items: center;
+    
+
+//     .left{
+//         display: flex;
+//         flex-direction: column;
+//         place-content: center;
+
+//         h1{
+//             font-size: rem(100);
+//             text-transform: uppercase;
+//             font-weight: 500;
+//         }
+
+//         .desc{
+//             margin-top: rem(20);
+//             display: flex;
+//             gap: rem(40);
+
+//             p{
+//                 font-size: rem(14);
+//             }
+//         }
+
+//         #border{
+//             width: fit-content;
+//             align-self: flex-end;
+//             text-transform: uppercase;
+//             font-weight: 500;
+//         }
+//     }
+//     .right{
+//         .img-cont{
+//             margin-left: auto;
+//             width: 75%;
+//             aspect-ratio: 4/5;
+//             position: relative;
+//             overflow: hidden;
+//             border-radius: rem(20);
+
+//             img{
+//                 width: 100%;
+//                 aspect-ratio: 4 / 5;
+//             }
+//         }
+
+//         img{
+//             object-fit: cover;
+//         }
+//     }
+// }
+

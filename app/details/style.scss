@@ -1,0 +1,143 @@
+@use "@/app/scss/variables" as *;
+
+body{
+
+    .container{
+        @include full-width;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50%;
+        background-color: #EEEEEE;
+        gap: rem(80);
+
+        @include breakpoint(tablet){
+            padding-top: rem(90);
+        }
+
+        @include breakpoint(laptop){
+            flex-direction: row;
+            padding-top: rem(70);
+            width: fit-content;
+        }
+
+        .left-image{
+            width: 70%;
+            position: relative;
+            aspect-ratio: 3/6;
+            overflow: hidden;
+            border-radius: rem(20);
+            box-shadow: rem(8) rem(8) rem(5) #352F44;
+
+            @include breakpoint(laptop){
+                height: 100%;
+                width: 40%;
+            }
+        }
+
+        .project-details{
+            width: 100%;
+
+            p{
+                font-size: rem(18);
+                font-weight: 500;
+                font-family: $poppins;
+
+                @include breakpoint(tablet){
+                    font-size: rem(25);
+                    font-weight: 600;
+                }
+
+                @include breakpoint(laptop){
+                    font-size: rem(18);
+                font-weight: 500;
+                }
+
+                span{
+                    font-size: rem(16);
+                    font-weight: 400;
+                    font-family: $poppins;
+                    opacity: 0.6;
+
+                    @include breakpoint(tablet){
+                        font-size: rem(20);
+                        font-weight: 500;
+                    }
+
+                    @include breakpoint(laptop){
+                        font-size: rem(16);
+                    font-weight: 400;
+                    }
+                }
+            }
+
+            .details{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: rem(30);
+                padding-top: rem(20);
+
+                .headings{
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(20);
+
+                    @include breakpoint(tablet){
+                        gap: rem(20);
+                    }
+
+                    @include breakpoint(laptop){
+                        gap: rem(15);
+                    }
+                }
+
+                .desc-btn{
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(20);
+
+                    .btns{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: rem(20);
+
+                        button{
+                            border: none;
+                            background: none;
+                            padding: rem(10) rem(25);
+                            background-color: $dark;
+                            color: $light;
+                            border-radius: rem(20);
+                            display: flex;
+                            gap: rem(10);
+
+                            @include breakpoint(tablet){
+                                font-size: rem(25);
+                                padding: rem(15) rem(40);
+                            }
+
+                            @include breakpoint(laptop){
+                                font-size: rem(16);
+                                padding: rem(10) rem(25);
+                            }
+
+                            &:hover{
+                                cursor: pointer;
+                                background-color: white;
+                                color: $dark;
+                            }
+
+                            &:active{
+                                background-color: $dark;
+                                color: $light;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

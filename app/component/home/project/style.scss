@@ -1,0 +1,444 @@
+@use "@/app/scss/variables" as *;
+
+#projects{
+    @include full-width;
+    height: 100%;
+    min-height: 100vh;
+    
+    .project-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-block: rem(136);
+        gap: rem(80);
+
+        #project-heading{
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: rem(16);
+            font-family: $poppins;
+
+            @include breakpoint(tablet){
+                font-size: rem(25);
+            }
+
+            @include breakpoint(laptop){
+                font-size: rem(16);
+            }
+        }
+
+        
+        .project-card1{
+            width: 100%;
+    padding-inline: 15px;
+    padding-top: 30px;
+    background-color: #232121;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+
+    @include breakpoint(laptop){
+        flex-direction: row;
+        gap: rem(100);
+        padding-inline: 5vw;
+        width: 100%;
+
+    }
+
+    @include breakpoint(tablet){
+        flex-direction: row;
+        gap: rem(70);
+        width: 100%;
+    }
+
+            .left{
+                width: 100%;
+                position: relative;
+                aspect-ratio: 3/2;
+                overflow: hidden;
+                border-radius: rem(20) rem(20) 0 0;
+            }
+
+            .right{
+                width: 100%;
+                color: $light;
+                display: flex;
+                flex-direction: column;
+                gap: rem(20);
+
+                .right-container{
+                    @include breakpoint(laptop){
+                        padding-top: rem(20);
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: rem(25);
+                    }
+
+                    display: flex;
+                        flex-direction: column;
+                        gap: rem(25);
+
+                    .para-div{
+                        @include breakpoint(laptop){
+                            width: 78%;
+                        }
+                    }
+                }
+
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(15);
+
+                    .card-heading{
+                        font-size: rem(25);
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(30);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(25);
+                        }
+                    }
+
+                    .subheading{
+                        font-size: rem(13);
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        @include breakpoint(tablet){
+                            font-size: rem(16);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(15);
+                        }
+                    }
+
+                    .project-desc{
+                        font-size: rem(16);
+                        font-weight: 400;
+                        opacity: 0.7;
+                        line-height: rem(25);
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(18);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(16);
+                        }
+
+                    }
+                }
+
+                .link-buttons{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    padding-bottom: rem(50);
+
+                    @include breakpoint(laptop){
+                        width: 80%;
+                    }
+
+                    @include breakpoint(tablet){
+                        width: 90%;
+                    }
+
+                    a{
+                        font-size: rem(16);
+                        font-weight: 500;
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(17);
+                        }
+                    }
+                }
+
+            }
+        }
+        .project-card2{
+            width: 100%;
+            padding-inline: 15px;
+            padding-top: 30px;
+            background-color: #EDEBE8;
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: rem(20);
+
+            @include breakpoint(laptop){
+                flex-direction: row;
+                gap: rem(100);
+                padding-inline: 5vw;
+                width: 100%;
+        
+            }
+
+            @include breakpoint(tablet){
+                flex-direction: row;
+                gap: rem(70);
+                width: 100%;
+            }
+
+            .left{
+                width: 100%;
+                color: $dark;
+                display: flex;
+                flex-direction: column;
+                gap: rem(20);
+
+                .right-container{
+                    @include breakpoint(laptop){
+                        padding-top: rem(20);
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: rem(25);
+                    }
+
+                    display: flex;
+                        flex-direction: column;
+                        gap: rem(25);
+
+                    .para-div{
+                        @include breakpoint(laptop){
+                            width: 78%;
+                        }
+                    }
+                }
+
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(15);
+
+                    .card-heading{
+                        font-size: rem(25);
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(30);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(25);
+                        }
+                    }
+
+                    .subheading{
+                        font-size: rem(13);
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        @include breakpoint(tablet){
+                            font-size: rem(16);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(15);
+                        }
+                    }
+
+                    .project-desc{
+                        font-size: rem(16);
+                        font-weight: 400;
+                        opacity: 0.7;
+                        line-height: rem(25);
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(18);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(16);
+                        }
+
+                    }
+                }
+
+                .link-buttons{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    padding-bottom: rem(50);
+
+                    @include breakpoint(laptop){
+                        width: 80%;
+                    }
+
+                    @include breakpoint(tablet){
+                        width: 90%;
+                    }
+
+                    a{
+                        font-size: rem(16);
+                        font-weight: 500;
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(17);
+                        }
+                    }
+                }
+            }
+
+            .right{
+                width: 100%;
+                position: relative;
+                aspect-ratio: 3/2;
+                overflow: hidden;
+                border-radius: rem(20) rem(20) 0 0;
+            }
+        }
+
+        .project-card3{
+            width: 100%;
+    padding-inline: 15px;
+    padding-top: 30px;
+    background-color: #232121;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+
+    @include breakpoint(laptop){
+        flex-direction: row;
+        gap: rem(100);
+        padding-inline: 5vw;
+        width: 100%;
+
+    }
+
+    @include breakpoint(tablet){
+        flex-direction: row;
+        gap: rem(70);
+        width: 100%;
+    }
+
+            .left{
+                width: 100%;
+                position: relative;
+                aspect-ratio: 3/2;
+                overflow: hidden;
+                border-radius: rem(20) rem(20) 0 0;
+            }
+
+            .right{
+                width: 100%;
+                color: $light;
+                display: flex;
+                flex-direction: column;
+                gap: rem(20);
+
+                .right-container{
+                    @include breakpoint(laptop){
+                        padding-top: rem(20);
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: rem(25);
+                    }
+
+                    display: flex;
+                        flex-direction: column;
+                        gap: rem(25);
+
+                    .para-div{
+                        @include breakpoint(laptop){
+                            width: 78%;
+                        }
+                    }
+                }
+
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    gap: rem(15);
+
+                    .card-heading{
+                        font-size: rem(25);
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(30);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(25);
+                        }
+                    }
+
+                    .subheading{
+                        font-size: rem(13);
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        @include breakpoint(tablet){
+                            font-size: rem(16);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(15);
+                        }
+                    }
+
+                    .project-desc{
+                        font-size: rem(16);
+                        font-weight: 400;
+                        opacity: 0.7;
+                        line-height: rem(25);
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(18);
+                        }
+
+                        @include breakpoint(laptop){
+                            font-size: rem(16);
+                        }
+
+                    }
+                }
+
+                .link-buttons{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    padding-bottom: rem(50);
+
+                    @include breakpoint(laptop){
+                        width: 80%;
+                    }
+
+                    @include breakpoint(tablet){
+                        width: 90%;
+                    }
+
+                    a{
+                        font-size: rem(16);
+                        font-weight: 500;
+                        font-family: $poppins;
+
+                        @include breakpoint(tablet){
+                            font-size: rem(15);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
