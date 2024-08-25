@@ -5,7 +5,7 @@ import Header from "@/app/component/header/Header";
 export const metadata: Metadata = {
   title: "Aditya Bhalerao | Full Stack designer",
   description:
-    "full-stack designer, personal portfolio, Sahil Satpute, projects, front-end developer, react developer, next js developer, ui-ux developer",
+    "full-stack designer, personal portfolio, Aditya Bhalerao, projects, front-end developer, react developer, next js developer, ui-ux developer",
 };
 
 export default function RootLayout({
