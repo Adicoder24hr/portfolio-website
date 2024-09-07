@@ -157,6 +157,9 @@
                         font-size: rem(16);
                         font-weight: 500;
                         font-family: $poppins;
+                        display: flex;
+                        align-items: center;
+                        gap: rem(10);
 
                         @include breakpoint(tablet){
                             font-size: rem(17);
@@ -286,6 +289,9 @@
                         font-size: rem(16);
                         font-weight: 500;
                         font-family: $poppins;
+                        display: flex;
+                        align-items: center;
+                        gap: rem(10);
 
                         @include breakpoint(tablet){
                             font-size: rem(17);
@@ -431,6 +437,9 @@
                         font-size: rem(16);
                         font-weight: 500;
                         font-family: $poppins;
+                        display: flex;
+                        align-items: center;
+                        gap: rem(10);
 
                         @include breakpoint(tablet){
                             font-size: rem(15);

@@ -6,11 +6,11 @@ import { ReactTyped } from "react-typed";
 import { motion, useInView } from "framer-motion";
 import useAnimateOnView from "../../ui/useAnimateOnView/useAnimateOnView";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
 
 
 const MyProjects = ()=>{
-
-    const text = "GitHub ->";
 
     const card1 = useAnimateOnView({ threshold: 0.25, triggerOnce: true });
     const card2 = useAnimateOnView({ threshold: 0.25, triggerOnce: true });
@@ -55,10 +55,10 @@ const MyProjects = ()=>{
                     <div className="link-buttons">
 
                     <Link href="https://github.com/Adicoder24hr/sunnyside-design" className="github">
-                        {text}
+                        GitHub <FaArrowRight />
                     </Link>
 
-                    <Link href="/details" className="show_more">Show more +</Link>
+                    <Link href="/details" className="show_more">Show more <FaPlus /></Link>
 
                     </div>
                     </div>
@@ -86,7 +86,7 @@ const MyProjects = ()=>{
                     <div className="link-buttons">
 
                     <a href="https://github.com/Adicoder24hr/todo-list-app" className="github">
-                        {text}
+                        GitHub <FaArrowRight />
                     </a>
 
                     </div>
@@ -128,7 +128,7 @@ const MyProjects = ()=>{
                     <div className="link-buttons">
 
                     <a href="https://github.com/Adicoder24hr/WheatherApp" className="github">
-                        {text}
+                        GitHub <FaArrowRight />
                     </a>
 
                     </div>
