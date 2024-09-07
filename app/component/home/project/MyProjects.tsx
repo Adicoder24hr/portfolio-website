@@ -5,7 +5,7 @@ import "./style.scss";
 import { ReactTyped } from "react-typed";
 import { motion, useInView } from "framer-motion";
 import useAnimateOnView from "../../ui/useAnimateOnView/useAnimateOnView";
-import { Link } from "react-scroll";
+import Link from "next/link";
 
 
 const MyProjects = ()=>{
@@ -54,12 +54,11 @@ const MyProjects = ()=>{
 
                     <div className="link-buttons">
 
-                    <a href="https://github.com/Adicoder24hr/sunnyside-design" className="github">
+                    <Link href="https://github.com/Adicoder24hr/sunnyside-design" className="github">
                         {text}
-                    </a>
+                    </Link>
 
-                    <a
-                    href="/details" className="show_more">Show more +</a>
+                    <Link href="/details" className="show_more">Show more +</Link>
 
                     </div>
                     </div>

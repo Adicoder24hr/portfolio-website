@@ -54,19 +54,19 @@ const Details = () => {
                         </p>
 
                         <div className="btns">
-                            <a href="/">
+                            <Link href="/">
                             <button className="home">
                             <IoHomeOutline />
                                 Home
                                 </button>
-                            </a>
+                            </Link>
 
-                            <a href="https://github.com/Adicoder24hr/sunnyside-design">
+                            <Link href="https://github.com/Adicoder24hr/sunnyside-design">
                             <button className="github">
                             <FaGithub />
                                 GitHub
                             </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
