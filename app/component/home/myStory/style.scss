@@ -9,6 +9,7 @@
     color: $light;
     font-family: $poppins;
     overflow-y: hidden;
+    overflow-x: hidden;
     @include breakpoint(tablet){
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -280,7 +281,7 @@
         flex-direction: column;
         @include full-width;
         gap: rem(30);
-        padding-top: rem(100);
+        padding-block: rem(100);
 
         @include breakpoint(laptop){
             display: flex;
